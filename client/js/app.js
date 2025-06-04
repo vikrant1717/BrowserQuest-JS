@@ -78,6 +78,8 @@ define(['jquery', 'storage'], function($, Storage) {
                     self.game.loadMap();
                 }
                 self.start(username);
+
+                
             });
         },
 
@@ -129,6 +131,7 @@ define(['jquery', 'storage'], function($, Storage) {
 
         	if(mouse.x <= 0) {
         	    mouse.x = 0;
+                
         	} else if(mouse.x >= width) {
         	    mouse.x = width - 1;
         	}
